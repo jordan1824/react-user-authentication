@@ -13,8 +13,8 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-// Routers
-app.use('/', require('./routers/Router'))
+// Routes
+app.use('/', require('./routers/userRouter'))
 
 // Server Listener
 app.listen(PORT, () => {
